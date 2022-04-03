@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Практическое задание 12.7.3.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000;}
+.s1 { color: #008080; font-weight: bold;}
+.s2 { color: #0000ff;}
+.s3 { color: #000080; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Практическое задание 12.7.3.py</font>
+</center></td></tr></table>
+<pre>per_cent={<span class="s1">'ТКБ'</span>: <span class="s2">5.6</span>, <span class="s1">'СКБ'</span>: <span class="s2">5.9</span>, <span class="s1">'ВТБ'</span>: <span class="s2">4.28</span>, <span class="s1">'СБЕР'</span>: <span class="s2">4.0</span>}
+deposit=[]
+money = input(<span class="s1">&quot;Введите сумму депозита (рубли):&quot;</span>)
+money=int(money)
+<span class="s3">for </span>key <span class="s3">in </span>per_cent:
+    deposit.append(int(money*per_cent[key]/<span class="s2">100</span>))
+print(<span class="s1">&quot;Все возможные варианты:&quot;</span>, deposit)
+print(<span class="s1">&quot;Максимальная сумма, которую вы можете заработать:&quot;</span>, max(deposit))</pre>
+</body>
+</html>
